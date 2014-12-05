@@ -8,6 +8,7 @@ var squeeze = function(str){
   return arr.join("");
 };
 
+//Ryan's sol
 // function squeeze(str){
 //   var word = str.split("");
 //   var deleted;
@@ -21,5 +22,17 @@ var squeeze = function(str){
 //     }
 //   } while (deleted);
 //   return(word.join(""));
+// }
+
+
+//Emmy's sol
+// function squeeze(str) {
+//   var newstr = str[0] || "";
+//   for (var i=1; i<str.length; i++) {
+//     if (str[i] != str[i-1]) {
+//     newstr += str[i];
+//     }
+//   }
+//   return newstr;
 // }
 
