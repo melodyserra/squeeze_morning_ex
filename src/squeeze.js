@@ -8,6 +8,20 @@ var squeeze = function(str){
   return arr.join("");
 };
 
+// Ilias' sol
+// function squeeze(string) {
+//   //Array that will store single letters
+//   var splitString = string.split("");
+//   var previousLetter = "";
+//   var singleLettersCollection = splitString.filter(function(letter){
+//     if(letter != previousLetter){
+//       previousLetter = letter;
+//       return letter;
+//     }
+//   });
+//   return singleLettersCollection.join("");
+// }
+
 //Ryan's sol
 // function squeeze(str){
 //   var word = str.split("");
@@ -35,4 +49,14 @@ var squeeze = function(str){
 //   }
 //   return newstr;
 // }
+
+//Peter's sol
+// var squeeze = function(str){
+//   var strArray = str.split('');  //split string into array
+//   var newArray = [];
+//   for (var i = 0; i < strArray.length; i++) {
+//     if (strArray[i] !== strArray[i+1]) newArray.push(strArray[i]);  //splice out the duplicate
+//   }
+//   return newArray.join('');  //return array as string
+// };
 
